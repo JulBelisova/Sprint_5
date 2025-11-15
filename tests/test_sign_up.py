@@ -42,7 +42,7 @@ class TestCheckingIncorrectPassword:
         # arrange
         driver.get(sign_up_site)
         email = generate_registration_data()
-        password = '12'
+        password = "12"
         name = "Петя"
         driver.find_element(*Locators.NAME).send_keys(name)
         driver.find_element(*Locators.EMAIL).send_keys(email)

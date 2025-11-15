@@ -1,5 +1,5 @@
 class Credentials:
-    email='qwerqewr@asdfsdf.ru'
-    password='123456'
+    email='belisova_34@gmail.com'
+    password='qwerty123'
 
 timeout = 20
