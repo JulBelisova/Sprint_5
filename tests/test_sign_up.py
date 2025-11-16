@@ -8,7 +8,6 @@ sys.path.insert(0, project_root)
 
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from src.data import Credentials
 from src.helper import generate_registration_data
 from src.locators import Locators
 from src.url import *

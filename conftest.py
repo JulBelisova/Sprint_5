@@ -8,7 +8,7 @@ from src.url import *
 from src.data import Credentials
 from src.locators import Locators
 
-@pytest.fixture(scope="session")
+@pytest.fixture(scope="function")
 def driver():
     options = Options()
     options.add_argument("--window-size=1200,600")

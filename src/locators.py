@@ -57,7 +57,7 @@ class Locators:
     # Логотип:
     LOGO = (By.XPATH, ".//div[contains(@class, 'header__logo')]//a")
     # переход на Соусы:
-    SAUSE = (
+    SAUCE = (
         By.XPATH,
         ".//span[@class = 'text text_type_main-default'][text()='Соусы']",
     )
@@ -68,10 +68,17 @@ class Locators:
     )
     # переход на Булки:
     BUN = (By.XPATH, ".//span[@class = 'text text_type_main-default'][text()='Булки']")
+    # Текст "Булки" на странице конструктора(для проверки перехода на данный раздел):
+    TEXT_BUN = (By.XPATH, ".//h2[@class = 'text text_type_main-medium mb-6 mt-10'][text()='Булки']")
     # Текст"Начинки" на странице конструктора(для проверки перехода на данный раздел):
     TEXT_FILLING = (
         By.XPATH,
         ".//h2[@class ='text text_type_main-medium mb-6 mt-10'][text()='Начинки']",
+    )
+    # Элемент "Соус с шипами Антарианского плоскоходца" на странице конструктора(для проверки перехода на раздел Соус):
+    TEXT_SAUCE = (
+        By.XPATH,
+        ".//p[@class ='BurgerIngredient_ingredient__text__yp3dH'][text()='Соус с шипами Антарианского плоскоходца']",
     )
     # Выход
     LOG_OUT = (
@@ -83,3 +90,20 @@ class Locators:
         By.XPATH,
         ".//button[@class = 'button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_large__G21Vg'][text()='Оформить заказ']",
     )
+    # Поле 'email' на странице входа в аккаунт:
+    ENTER_EMAIL = (
+        By.XPATH,
+        ".//input[@class= 'text input__textfield text_type_main-default'][@name = 'name']",
+    )
+    # Поле "Пароль" на странице входа в аккаунт:
+    ENTER_PASSWORD = (
+        By.XPATH,
+        ".//input[@class= 'text input__textfield text_type_main-default'][@name = 'Пароль']",
+    )
+    # Кнопка 'Войти' на странице входа в аккаунт:
+    ENTER_BUTTON = (
+        By.XPATH,
+        ".//button[@class = 'button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_medium__3zxIa'][text() = 'Войти']",
+    )
+    #Соберите бургер:
+    BUILD_BURGER = (By.XPATH, ".//h1[text()='Соберите бургер']")
