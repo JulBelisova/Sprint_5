@@ -1,4 +1,6 @@
-main_site = 'https://stellarburgers.education-services.ru/'
-sign_up_site = 'https://stellarburgers.education-services.ru/register'
-forgot_password = 'https://stellarburgers.education-services.ru/forgot-password'
-my_account = 'https://stellarburgers.education-services.ru/account/profile'
+BASE_URL = 'https://stellarburgers.education-services.ru'
+
+main_site = BASE_URL + '/'
+sign_up_site = BASE_URL + '/register'
+forgot_password = BASE_URL + '/forgot-password'
+my_account = BASE_URL + '/account/profile'

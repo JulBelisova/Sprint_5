@@ -5,12 +5,12 @@ class Locators:
     # плейсхолдер "Имя":
     NAME = (
         By.XPATH,
-        "(.//form[@class ='Auth_form__3qKeq mb-20']//input[@name = 'name'])[1]",
+        ".//div[label[text()='Имя']]//input",
     )
     # плейсхолдер "Email":
     EMAIL = (
         By.XPATH,
-        "(.//form[@class ='Auth_form__3qKeq mb-20']//input[@name = 'name'])[2]",
+        ".//div[label[text()='Email']]//input",
     )
     # плейсхолдер "Пароль":
     PASSWORD = (
@@ -68,18 +68,12 @@ class Locators:
     )
     # переход на Булки:
     BUN = (By.XPATH, ".//span[@class = 'text text_type_main-default'][text()='Булки']")
-    # Текст "Булки" на странице конструктора(для проверки перехода на данный раздел):
-    TEXT_BUN = (By.XPATH, ".//h2[@class = 'text text_type_main-medium mb-6 mt-10'][text()='Булки']")
-    # Текст"Начинки" на странице конструктора(для проверки перехода на данный раздел):
-    TEXT_FILLING = (
-        By.XPATH,
-        ".//h2[@class ='text text_type_main-medium mb-6 mt-10'][text()='Начинки']",
-    )
-    # Элемент "Соус с шипами Антарианского плоскоходца" на странице конструктора(для проверки перехода на раздел Соус):
-    TEXT_SAUCE = (
-        By.XPATH,
-        ".//p[@class ='BurgerIngredient_ingredient__text__yp3dH'][text()='Соус с шипами Антарианского плоскоходца']",
-    )
+    # Переход на "Булки" на странице конструктора:
+    BUN_CHECK = (By.XPATH, ".//div[@style = 'display: flex;']/div[@class = 'tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect']/span[text()='Булки']")
+    # Переход на "Начинки" на странице конструктора:
+    FILLING_CHECK = (By.XPATH, ".//div[@style = 'display: flex;']/div[@class = 'tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect']/span[text()='Начинки']")
+    # Переход на "Соус" на странице конструкторана.:
+    SAUCE_CHECK = (By.XPATH, ".//div[@style = 'display: flex;']/div[@class = 'tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect']/span[text()='Соусы']")
     # Выход
     LOG_OUT = (
         By.XPATH,
